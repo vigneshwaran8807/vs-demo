@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>hello</h1>
+
+    <button onclick="sample()">click</button>
+    <script>
+        function sample() {
+            alert("onclick");
+        }
+    </script>
+    <br><br>
+    <button onmouseover="mouseover()">click</button>
+    <script>
+        function mouseover() {
+            alert("onmouseover");
+        }
+    </script>
+    <br><br>
+    <button onmouseout="mouseout()">click</button>
+    <script>
+        function mouseout() {
+            alert("onmouseout");
+        }
+    </script>
+    <br><br>
+    <select id="color" onchange="color()">
+        <option value="select any color">select any color</option>
+        <option value="blue">blue</option>
+        <option value="red">red</option>
+        <option value="green">green</option>
+    </select>
+    <script>
+        function color() {
+            var a = document.getElementById("color").value;
+            document.write(a).style.color="red";
+        }
+    </script>
+    <br><br>
+    <input id="name" type="text" onfocus="onfocus()">
+    <script>
+        function onfocus() 
+        {
+            document.getElementById("name").style.color="blue";
+        }
+    </script>
+    <br><br>
+    <input id="out" type="text" onblur="onblur()">
+    <script>
+        function onblur() 
+        {
+            document.getElementById("out").style.color = "green";
+        }
+
+    </script>
+<br><br>
+<button onclick="click()">click</button>
+<script>
+function click()
+{
+    window.location="https://google.com";
+}
+</script>
+<script>
+    function click()
+    {
+        window.location="https://google.com";
+    }
+    document.write("your page will be redirected in 10seconds");
+    setTimeout("click()",10000)
+</script>
+</body>
+
+</html>

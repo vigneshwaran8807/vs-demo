@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><script>
+    var bikes=[
+    {name:"yamaha",color:"red",cost:"200"},
+    {name:"suzuki",color:"green",cost:"500"},
+    {name:"hero",color:"pink",cost:"700"}
+];
+var res=bikes.filter(function(hee){
+    return hee.cost < 650;
+})
+console.log("res",res);
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+alert("1 javascript,2 method ");
